@@ -367,7 +367,7 @@
     <!-- contacts-2 -->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="contaner-position " > 
+        <div class="container-position " > 
           <a href="./index.html" class="footer-logo-link"><span class="footer-span">Web</span>Studio</a>
           <address class="address-first">
             <ul class="footer-contacts-list">
@@ -382,10 +382,10 @@
               </li>
             </ul>
           </address>
-         </div>
+        </div>
          
          
-         <div class="contaner-position">
+         <div class="container-social-position">
           <p class="footer-social-title">приєднуйтесь</p>
           <ul class="footer-social">
             <li class="footer-social-item">
@@ -417,7 +417,25 @@
               </a>
             </li>
           </ul>
-         </div> 
+        </div> 
+        <div class="container-form-position">
+          <p class="footer-social-title"> Підпишіться на розсилку</p>
+          <form name="contacts-form" autocomplete="off">
+            <div class="contacts-form-position">
+              <label for="email">
+                <span class="visually-hidden">E-mail</span>
+                <input class="footer-contacts-form-input"  id="email" name="E-mail" type="email" placeholder="E-mail">
+              </label>
+              <div class="footer-contacts-button">
+                <button class="footer-contacts-form-button" type="submit">Підписатися</button>
+              <svg class="footer-contacts-icon" width="24" height="24">
+                <use href="./img/icons/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+              </div>
+            </div>
+          </form>
+       
+        </div>
       </div>
     </footer>
 
@@ -428,6 +446,63 @@
             <use href="./img/icons/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-text">Залиште свої дані, ми вам передзвонимо </p>
+        <form name="contacts-modal-name" class="form">
+          <div class="form-field-container">
+            <div class="form-field">
+              <label class="contacts-label" for="name">
+                <span class="contacts-form-name-span">Ім'я</span>
+                <span  class="contacts-form-box">
+                  <input class="contacts-form-input" id="name" type="text" required autofocus>
+                  <svg class="contacts-form-icons">
+                    <use href="./img/icons/symbol-defs.svg#icon-person-black"> </use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div class="form-field">
+              <label for="number">
+                <span class="contacts-form-name-span">Телефон</span>
+                <span  class="contacts-form-box">
+                  <input class="contacts-form-input" id="number" type="number" name="phone" required>
+                  <svg class="contacts-form-icons">
+                    <use href="./img/icons/symbol-defs.svg#icon-phone-black"> </use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div class="form-field">
+              <label for="email-e">
+                <span class="contacts-form-name-span">Пошта</span>
+                <span class="contacts-form-box">
+                  <input class="contacts-form-input"  id="email-e" type="email" name="Email">
+                  <svg class="contacts-form-icons">
+                    <use href="./img/icons/symbol-defs.svg#icon-email-black"> </use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+           <div class="form-field">
+            <label for="comments">
+              <span class="contacts-form-name-span">Коментар</span>
+              <textarea class="contacts-form-textarea" placeholder="Введіть текст" name="comments" id="comments" cols="30" rows="3"></textarea>
+            </label>
+           </div>
+          </div>
+          <div class="  ">
+              <label class="contacts-form-checkbox-container" for="accept">
+                <input class="contacts-form-checkbox visually-hidden" type="checkbox"  id="accept"  required>
+                <svg class="contacts-form-icons-checkbox">
+                  <use class="contacts-form-icons-deny" href="./img/icons/symbol-defs.svg#icon-Vector"> </use>
+                  <use class="contacts-form-icons-accept" href="./img/icons/symbol-defs.svg#icon-checkbox-checked"> </use>
+                </svg>
+                <span class="contacts-form-checkbox-text">Погоджуюся з розсилкою та приймаю</span>
+              <a class="contacts-form-checkbox-link" href="#">Умови договору</a>
+              </label>
+          </div>
+          <button class="contacts-modal-button" type="submit">Відправити</button>
+        </form>
+       
       </div>
     </div>
 
